@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pahinga — Work well. Rest well.</title>
+    <meta
+      name="description"
+      content="Pahinga is a calm desktop companion that helps you take breaks, drink water, and stay focused during long computer sessions."
+    />
+    <link rel="icon" href="assets/icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Foundations -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Sections -->
+    <link rel="stylesheet" href="css/sections/nav.css" />
+    <link rel="stylesheet" href="css/sections/hero.css" />
+    <link rel="stylesheet" href="css/sections/stats.css" />
+    <link rel="stylesheet" href="css/sections/features.css" />
+    <link rel="stylesheet" href="css/sections/showcase.css" />
+    <link rel="stylesheet" href="css/sections/onboarding.css" />
+    <link rel="stylesheet" href="css/sections/rest.css" />
+    <link rel="stylesheet" href="css/sections/quote.css" />
+    <link rel="stylesheet" href="css/sections/faq.css" />
+    <link rel="stylesheet" href="css/sections/cta.css" />
+    <link rel="stylesheet" href="css/sections/footer.css" />
+
+    <!-- Responsive overrides (must load last) -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ===== Nav ===== -->
+    <nav class="nav" id="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">
+          <span class="brand-logo"><img src="assets/icon.png" alt="" /></span>
+          Pahinga
+        </a>
+        <div class="nav-links" id="nav-links">
+          <a href="#features">Features</a>
+          <a href="#showcase">Screens</a>
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-accent nav-cta-mobile" href="assets/exe/pahinga-0.1.2-setup.exe" download>Download</a>
+        </div>
+        <div class="nav-cta">
+          <a class="btn btn-ghost nav-cta-desktop" href="#features">Learn more</a>
+          <a class="btn btn-accent nav-cta-desktop" href="assets/exe/pahinga-0.1.2-setup.exe" download>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3v12" />
+              <path d="m6 11 6 6 6-6" />
+              <path d="M5 21h14" />
+            </svg>
+            Download
+          </a>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Hero ===== -->
+    <header class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="hero-pill">
+            <span class="dot">✦</span>
+            <span>New · <b>v1.0 for Windows</b> is here</span>
+          </div>
+          <h1 class="hero-title">Work well.<br /><em>Rest well.</em></h1>
+          <p class="hero-sub">
+            Pahinga is a calm desktop companion that nudges you to take breaks, drink water, and
+            move — so long computer sessions stop costing you your shoulders, eyes, and focus.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-accent btn-lg" href="assets/exe/pahinga-0.1.2-setup.exe" id="download" download>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3v12" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M5 21h14" />
+              </svg>
+              Download for Windows
+              <span class="meta">.exe · 1 GB</span>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#showcase">
+              See it in action
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+          <div class="hero-trust">
+            <span
+              ><span class="check"
+                ><svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m5 12 5 5L20 7" /></svg
+              ></span>
+              Free for now (beta)</span
+            >
+            <span
+              ><span class="check"
+                ><svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m5 12 5 5L20 7" /></svg
+              ></span>
+              Runs locally</span
+            >
+            <span
+              ><span class="check"
+                ><svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m5 12 5 5L20 7" /></svg
+              ></span>
+              No account needed</span
+            >
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="hero-art-frame float-y">
+            <img src="assets/04_dashboard.png" alt="Pahinga dashboard" />
+          </div>
+          <div class="float-card fc-1 float-y delayed">
+            <div class="fc-ico">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 9v4l2.5 2.5" />
+                <path d="M9 2.5h6" />
+              </svg>
+            </div>
+            <div>
+              <div class="fc-title">Focus session</div>
+              <div class="fc-meta">24:57 of 25:00</div>
+            </div>
+          </div>
+          <div class="float-card fc-2 float-y">
+            <div class="fc-ico">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2.7s5.5 6.2 5.5 10.3a5.5 5.5 0 0 1-11 0C6.5 8.9 12 2.7 12 2.7Z" />
+              </svg>
+            </div>
+            <div>
+              <div class="fc-title">Sip of water</div>
+              <div class="fc-meta">in 20 minutes</div>
+            </div>
+          </div>
+          <div class="cat-bubble" title="Pahinga is watching out for you">
+            <img src="assets/icon.png" alt="Pahinga cat" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats" style="padding: 36px 0">
+      <div class="wrap stats-grid">
+        <div class="stats-cell">
+          <div class="stats-num">25 <em>min</em></div>
+          <div class="stats-label">Recommended focus block</div>
+        </div>
+        <div class="stats-cell">
+          <div class="stats-num">20-20-<em>20</em></div>
+          <div class="stats-label">Eye-rest rhythm, built in</div>
+        </div>
+        <div class="stats-cell">
+          <div class="stats-num">4 <em>stretches</em></div>
+          <div class="stats-label">Neck · Shoulder · Wrist · Eyes</div>
+        </div>
+        <div class="stats-cell">
+          <div class="stats-num">0 <em>accounts</em></div>
+          <div class="stats-label">Your data stays on your device</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="features" id="features">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">What's inside</span>
+          <h2>Quiet tools for a <em>kinder</em> workday</h2>
+          <p>
+            Pahinga lives in your tray and only speaks up when it matters — gentle nudges, not noisy
+            notifications.
+          </p>
+        </div>
+
+        <div class="feat-grid">
+          <div class="feat reveal">
+            <div class="feat-ico">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 9v4l2.5 2.5" />
+                <path d="M9 2.5h6" />
+              </svg>
+            </div>
+            <h3>Focus timer</h3>
+            <p>
+              Work in 25-minute blocks with intentional breaks. A breathing dot quietly tracks your
+              session — no anxious countdown.
+            </p>
+          </div>
+          <div class="feat reveal">
+            <div class="feat-ico">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2.7s5.5 6.2 5.5 10.3a5.5 5.5 0 0 1-11 0C6.5 8.9 12 2.7 12 2.7Z" />
+              </svg>
+            </div>
+            <h3>Hydration nudges</h3>
+            <p>
+              Sip-of-water reminders on your rhythm — every 30, 60, or 90 minutes. Small habit, big
+              difference.
+            </p>
+          </div>
+          <div class="feat reveal">
+            <div class="feat-ico">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h3l2-5 4 10 2-5h7" />
+              </svg>
+            </div>
+            <h3>Guided stretches</h3>
+            <p>
+              Quick neck, shoulder, wrist, and 20-20-20 eye routines — each under a minute, with
+              calm step-by-step prompts.
+            </p>
+          </div>
+          <div class="feat reveal">
+            <div class="feat-ico">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+              </svg>
+            </div>
+            <h3>Rest-lock mode</h3>
+            <p>
+              When you need it most, an always-on-top break overlay gently insists. Snooze and
+              emergency exit are always available.
+            </p>
+          </div>
+          <div class="feat reveal">
+            <div class="feat-ico">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 20V10" />
+                <path d="M10 20V4" />
+                <path d="M16 20v-7" />
+                <path d="M22 20H2" />
+              </svg>
+            </div>
+            <h3>Daily summary</h3>
+            <p>
+              A simple end-of-day reflection: focus time, breaks taken, water sipped, stretches
+              done. Without the streak guilt.
+            </p>
+          </div>
+          <div class="feat reveal">
+            <div class="feat-ico">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+              </svg>
+            </div>
+            <h3>Tray-quiet by default</h3>
+            <p>
+              No popups during meetings or deep work. Pahinga sits in your tray with a steady green
+              dot when all is well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Showcase ===== -->
+    <section class="showcase" id="showcase">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Inside the app</span>
+          <h2>A calm, <em>uncluttered</em> companion</h2>
+          <p>Five focused screens. Everything else gets out of your way.</p>
+        </div>
+
+        <div class="show-tabs reveal" role="tablist">
+          <button class="show-tab is-active" data-target="dashboard">Dashboard</button>
+          <button class="show-tab" data-target="timer">Focus timer</button>
+          <button class="show-tab" data-target="stretchA">Stretch list</button>
+          <button class="show-tab" data-target="stretchB">Stretch detail</button>
+          <button class="show-tab" data-target="summary">Daily summary</button>
+          <button class="show-tab" data-target="settings">Settings</button>
+        </div>
+
+        <div class="show-stage reveal">
+          <div class="show-frame" id="show-frame">
+            <img id="show-img" src="assets/04_dashboard.png" alt="Pahinga dashboard" />
+          </div>
+          <div class="show-caption">
+            <div>
+              <h4 id="show-title">A calm overview</h4>
+              <p id="show-desc">
+                Your current focus block, next break, hydration window, and today's progress — all
+                at a glance.
+              </p>
+            </div>
+            <div class="show-num" id="show-num">01 / 06</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Onboarding ===== -->
+    <section class="onboarding" id="how">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">First three minutes</span>
+          <h2>Set up in <em>three small steps</em></h2>
+          <p>No accounts, no email, no upsell. Pick your rhythm and start working.</p>
+        </div>
+        <div class="ob-grid">
+          <div class="ob reveal">
+            <div class="ob-step">Step 01</div>
+            <div class="ob-img"><img src="assets/01_onboarding.png" alt="Welcome" /></div>
+            <h4>Welcome</h4>
+            <p>
+              A quick hello — Pahinga helps you take breaks, drink water, and stay focused during
+              long sessions.
+            </p>
+          </div>
+          <div class="ob reveal">
+            <div class="ob-step">Step 02</div>
+            <div class="ob-img">
+              <img src="assets/02_onboarding.png" alt="How do you usually work" />
+            </div>
+            <h4>Tell us how you work</h4>
+            <p>
+              Developer, student, designer, freelancer — we tune the suggestions to match your day.
+            </p>
+          </div>
+          <div class="ob reveal">
+            <div class="ob-step">Step 03</div>
+            <div class="ob-img">
+              <img src="assets/03_onboarding.png" alt="Reminder preferences" />
+            </div>
+            <h4>Pick your rhythm</h4>
+            <p>
+              Choose how often you'd like reminders for breaks, water, stretches, and eye rest.
+              Change anytime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Rest lock ===== -->
+    <section class="rest">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Rest-lock mode</span>
+          <h2>For the days you'd <em>otherwise skip the break</em></h2>
+          <p>
+            A full-screen, always-on-top overlay that gently insists. With snooze and emergency
+            exit, because life happens.
+          </p>
+        </div>
+        <div class="rest-stage reveal">
+          <img src="assets/10_rest_lock_mode.png" alt="Rest-lock overlay" />
+        </div>
+        <div class="rest-row">
+          <div class="rest-card reveal">
+            <span class="ico"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2.7s5.5 6.2 5.5 10.3a5.5 5.5 0 0 1-11 0C6.5 8.9 12 2.7 12 2.7Z" /></svg
+            ></span>
+            <h4>Stand. Stretch. Sip.</h4>
+            <p>
+              Three simple cues. The overlay holds the moment so you actually pause, instead of
+              clicking away.
+            </p>
+          </div>
+          <div class="rest-card reveal">
+            <span class="ico"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" /></svg
+            ></span>
+            <h4>Snooze 5 min</h4>
+            <p>Mid-thought? Snooze without guilt. Pahinga returns when the moment is right.</p>
+          </div>
+          <div class="rest-card reveal">
+            <span class="ico"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h12" />
+                <path d="m11 6 6 6-6 6" />
+                <path d="M21 5v14" /></svg
+            ></span>
+            <h4>Emergency exit</h4>
+            <p>
+              An escape hatch is always one click away. Rest is meant to feel like rest, not a cage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quote ===== -->
+    <section class="quote">
+      <div class="wrap">
+        <div class="quote-card reveal">
+          <span class="quote-mark">"</span>
+          <blockquote>
+            Pahinga doesn't shout. It just sits there, like a small, kind cat, reminding you it's
+            time to look up from the screen.
+          </blockquote>
+          <div class="quote-cite">
+            <span class="av"><img src="assets/icon.png" alt="" /></span>
+            <span><b>From the team</b> · Manila, PH</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Questions</span>
+          <h2>Things you might be <em>wondering</em></h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-q">
+              Is Pahinga really free?
+              <span class="faq-icon"
+                ><svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" /></svg
+              ></span>
+            </button>
+            <div class="faq-a">
+              Pahinga is free for now while it's in beta. No accounts, no telemetry, no upsell. It
+              will also be available soon on the Microsoft Store. If you want to support
+              development, a small tip jar is on our GitHub.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Which platforms are supported?
+              <span class="faq-icon"
+                ><svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" /></svg
+              ></span>
+            </button>
+            <div class="faq-a">
+              Windows is available today (.exe installer). macOS and Linux builds are next on the
+              roadmap.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Where does my data go?
+              <span class="faq-icon"
+                ><svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" /></svg
+              ></span>
+            </button>
+            <div class="faq-a">
+              Nowhere. Everything Pahinga tracks — sessions, breaks, stretches — stays on your
+              machine. There's no server to call home to.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Will it interrupt me during meetings?
+              <span class="faq-icon"
+                ><svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" /></svg
+              ></span>
+            </button>
+            <div class="faq-a">
+              Pahinga respects do-not-disturb modes and lets you snooze instantly. Notifications are
+              gentle by design — no popping windows or audio cues unless you turn them on.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Why is the icon a cat?
+              <span class="faq-icon"
+                ><svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                >
+                  <path d="M12 5v14M5 12h14" /></svg
+              ></span>
+            </button>
+            <div class="faq-a">
+              Cats are unmatched at resting. They take long, intentional breaks and seem to be doing
+              fine. We're taking notes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-card reveal">
+          <h2>Your shoulders, eyes, and focus<br />will <em>thank you</em>.</h2>
+          <p>
+            Download Pahinga and try it for a single afternoon. The first time the gentle nudge
+            arrives, you'll get it.
+          </p>
+          <div class="cta-btns">
+            <a class="btn btn-accent btn-lg" href="assets/exe/pahinga-0.1.2-setup.exe" download>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3v12" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M5 21h14" />
+              </svg>
+              Download for Windows
+              <span class="meta">.exe · 1 GB</span>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#features">Learn more</a>
+          </div>
+          <div class="cta-meta">
+            v1.0.0 · Windows 10/11 · Free for now (beta) · Coming soon to the Microsoft Store
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <div class="wrap foot">
+        <div class="brand">
+          <span class="brand-logo"><img src="assets/icon.png" alt="" /></span>
+          Pahinga
+        </div>
+        <div class="foot-links">
+          <a href="#features">Features</a>
+          <a href="#showcase">Screens</a>
+          <a href="#faq">FAQ</a>
+          <a href="assets/exe/pahinga-0.1.2-setup.exe" download>Download</a>
+        </div>
+        <div>© 2026 Pahinga · Made with rest in mind.</div>
+      </div>
+    </footer>
+
+    <!-- Scripts (per-concern modules) -->
+    <script src="js/nav.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/reveal.js" defer></script>
+    <script src="js/showcase.js" defer></script>
+    <script src="js/faq.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+/* ---- Footer ---- */
+footer {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding: 36px 0;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.foot-links {
+  display: flex;
+  gap: 18px;
+}
+.foot-links a:hover {
+  color: var(--ink-1);
+}

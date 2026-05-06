@@ -1,0 +1,65 @@
+/* ---- Rest lock callout ---- */
+.rest {
+  background: linear-gradient(180deg, #16221c 0%, #0f1813 100%);
+  color: #e5eae6;
+  border-radius: 0;
+}
+.rest .section-head h2 {
+  color: #f0f4f0;
+}
+.rest .section-head p {
+  color: rgba(229, 234, 230, 0.65);
+}
+.rest .section-head .eyebrow {
+  color: rgba(229, 234, 230, 0.5);
+}
+.rest-stage {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.rest-stage img {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+.rest-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+.rest-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--r);
+  padding: 22px;
+}
+.rest-card h4 {
+  margin: 10px 0 6px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #f0f4f0;
+}
+.rest-card p {
+  margin: 0;
+  color: rgba(229, 234, 230, 0.65);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.rest-card .ico {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(143, 185, 155, 0.15);
+  color: #a8c9b0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 760px) {
+  .rest-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,4 @@
+# Build / installer artifacts (too large for the repo — distributed via Google Drive)
+assets/exe/
+*.exe
+*.rar

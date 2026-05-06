@@ -1,0 +1,78 @@
+/* ---- Showcase ---- */
+.showcase {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+.show-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin: 0 auto 36px;
+  padding: 5px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  width: fit-content;
+}
+.show-tab {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: var(--ink-3);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.show-tab.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+.show-tab:not(.is-active):hover {
+  color: var(--ink-1);
+}
+.show-stage {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+.show-frame {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.show-frame img {
+  width: 100%;
+  display: block;
+}
+.show-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 18px 4px 0;
+}
+.show-caption h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.show-caption p {
+  margin: 4px 0 0;
+  color: var(--ink-3);
+  font-size: 13.5px;
+  max-width: 60ch;
+}
+.show-num {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+  color: var(--ink-4);
+  font-size: 18px;
+}
